@@ -1,0 +1,182 @@
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/* Header Layouts*/
+header{
+    background-color: lightgrey;
+    position: fixed;
+    top: 0;
+    width: 100%;
+   
+
+}
+
+.nav-link{
+  display: block;
+    float: right;
+    position: relative;
+    right: 40px;
+    margin-left: 15px;
+    font-size: 24px;
+    font-family: 'Oswald', sans-serif;
+}
+.logo-div{
+  display: block;
+}
+
+
+/* Header Text*/
+
+a:link{
+    text-decoration: none;
+}
+/* email-section and form*/
+.email-header{
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-size :24px;
+}
+
+
+
+#email-signup{
+  padding: 100px;
+margin: auto;
+}
+
+#email-form{
+  display:flex;
+  align-items:center;
+  justify-content: center;
+}
+
+#submit{
+  position: relative;
+  left: 25%;
+  margin-top: 10%;
+  background-color: yellowgreen;
+  border: none;
+  font-family: 'Open Sans', sans-serif;
+}
+#header-img{
+  max-width: 100%;
+  height: auto;
+}
+/* product info*/
+
+#features{
+ 
+width:80%;
+display: grid;
+grid-template-columns: 1fr 3fr;
+grid-template-rows: 1fr 1fr 1fr;
+margin-bottom: 20px;
+}
+.materials-text, .shipping-text, .assurance-text{
+    grid-column: 2/3
+}
+.materials-img, .shipping-img,.assurance-img{
+    justify-self: center;
+    align-self: center;
+}
+.video-div{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+/* trombone price divs */
+#pricing{
+    display: flex;
+    justify-content: space-evenly;
+}
+@media screen and (max-width: 600px){
+  #pricing{
+
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+    
+  }
+  .ternor, .bass, .valve{
+    width: 200px;
+  }
+}
+
+.tenor, .bass, .valve{
+    border: 2px solid black;
+    text-align: center;
+    width: 400px;
+   
+   
+}
+.trom-type{
+    background-color: lightgrey;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    
+}
+.select{
+    margin-bottom: 10px;
+    border: none;
+    background-color: yellowgreen;
+    padding: 5px 10px;
+}
+h3{
+  font-family: 'Oswald', sans-serif;
+  font-size: 24px;
+}
+
+  p{
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  h1{
+    font-family: 'Oswald', sans-serif;
+    font-size: 28px;
+  }
+
+
+
+
